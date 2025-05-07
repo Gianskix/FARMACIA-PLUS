@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FarmaPlus - Gestión de Inventario</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <h1>📦 FarmaPlus - Gestión de Inventario</h1>
+
+  <div class="section">
+    <h2>➕ Agregar Producto</h2>
+    <div class="input-group">
+      <input type="text" id="nombre" placeholder="Nombre del producto">
+      <input type="number" id="stock" placeholder="Stock inicial">
+      <input type="number" id="precio" placeholder="Precio (S/.)">
+      <button onclick="agregarProducto()">Agregar</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📋 Inventario</h2>
+    <div id="inventario"></div>
+  </div>
+
+  <div class="section">
+    <h2>🛒 Vender Producto</h2>
+    <div class="input-group">
+      <input type="text" id="nombreVenta" placeholder="Nombre del producto">
+      <input type="number" id="cantidadVenta" placeholder="Cantidad a vender">
+      <button onclick="registrarVenta()">Vender</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🚨 Alertas de Bajo Stock</h2>
+    <div id="alertas"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
